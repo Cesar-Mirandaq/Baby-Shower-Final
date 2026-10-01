@@ -1,6 +1,6 @@
 // ===== Formulario de confirmación (se guarda en Google Sheets) =====
 // 1) Pega aquí la URL de tu Apps Script (ver README.md)
-const SCRIPT_URL = 'PEGA_AQUI_LA_URL_DE_TU_APPS_SCRIPT';
+   const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw2WB4ipt4VLnrwrrFRlz7HILzfeYg8RcC5r-ROidXP1ychQ0kzJF98wBLBIqII5dtdkg/exec';
 // 2) Máximo de personas por confirmación (contando a quien responde)
 const MAX_PERSONAS = 4;
 
