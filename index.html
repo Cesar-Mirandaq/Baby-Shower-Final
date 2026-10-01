@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Baby Shower de Julian</title>
+<meta name="description" content="Acompáñanos a celebrar la llegada de Julian. Domingo 8 de noviembre.">
+<meta property="og:title" content="Baby Shower de Julian">
+<meta property="og:description" content="Acompáñanos a celebrar la llegada de Julian. Domingo 8 de noviembre.">
+<meta name="theme-color" content="#8ecfff">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%BC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Sacramento&family=Lilita+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="cover" id="cover">
+  <div>
+    <h2>Baby Shower<strong>Julian</strong></h2>
+    <button id="open">Abrir invitación</button>
+  </div>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="cg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#cfe3fb"/></linearGradient>
+    <symbol id="heart" viewBox="0 0 24 22"><path d="M12 21S2 14.500 2 7.500A5.500 5.500 0 0 1 12 4.500 5.500 5.500 0 0 1 22 7.500C22 14.500 12 21 12 21z"/></symbol>
+    <symbol id="cloud" viewBox="0 0 200 110">
+      <g fill="url(#cg)"><circle cx="55" cy="70" r="36"/><circle cx="100" cy="48" r="44"/><circle cx="150" cy="68" r="38"/><rect x="30" y="66" width="145" height="40" rx="20"/></g>
+    </symbol>
+  </defs>
+</svg>
+
+<main class="wrap" id="wrap">
+  <div class="bubbles" id="bub" aria-hidden="true"></div>
+  <svg class="cloud" style="top:70px;right:-30px;--d:16s" viewBox="0 0 200 110"><use href="#cloud"/></svg>
+  <svg class="cloud" style="top:520px;right:-20px;width:190px;--d:12s;z-index:5" viewBox="0 0 200 110"><use href="#cloud"/></svg>
+  <svg class="cloud" style="bottom:-34px;left:-40px;width:200px;--d:15s;z-index:1" viewBox="0 0 200 110"><use href="#cloud"/></svg>
+  <svg class="cloud" style="top:300px;left:60%;width:90px;--d:10s;opacity:.6" viewBox="0 0 200 110"><use href="#cloud"/></svg>
+
+  <svg class="mobile" viewBox="0 0 170 260" aria-hidden="true">
+    <path d="M85 0V10M10 10H160" stroke="#8ecfff" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <g class="sw" style="transform-origin:30px 10px;animation-delay:-1s"><path d="M30 10V92" stroke="#b7defc" stroke-width="2"/><path transform="translate(30 110)" d="M0-18L4.4-6.1 17.1-5.6 7.1 2.3 10.6 14.6 0 7.5-10.6 14.6-7.1 2.3-17.1-5.6-4.4-6.1Z" fill="#4ea8ee" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></g>
+    <g class="sw" style="transform-origin:85px 10px;animation-delay:-2.6s"><path d="M85 10V132" stroke="#b7defc" stroke-width="2"/><path transform="translate(85 158)" d="M0-24A24 24 0 1 0 20 14 18 18 0 0 1 0-24Z" fill="#8ecfff" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></g>
+    <g class="sw" style="transform-origin:140px 10px;animation-delay:-.2s"><path d="M140 10V78" stroke="#b7defc" stroke-width="2"/><use href="#cloud" x="112" y="76" width="56" height="31"/></g>
+  </svg>
+  <i class="sp" style="top:150px;left:44%;animation-delay:.3s"></i>
+  <i class="sp" style="top:250px;left:34%;width:11px;height:11px;animation-delay:1.4s"></i>
+  <i class="sp" style="top:120px;left:70%;width:12px;height:12px;animation-delay:2s"></i>
+  <i class="sp" style="top:240px;left:78%;animation-delay:.9s"></i>
+  <div class="stork"><img src="img/stork.webp" alt="Cigüeña llevando al bebé"></div>
+
+  <button class="play" id="play" aria-label="Reproducir o pausar música">
+    <svg class="pl" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+    <svg class="pa" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+  </button>
+
+  <section class="stage" id="stage">
+    <div class="arch a1">
+      <div class="baby rv" style="--t:.9s">BABY</div>
+      <div class="shower rv" style="--t:1.2s">Shower</div>
+    </div>
+    <div class="arch a2">
+      <p class="invite rv" style="--t:1.3s">Acompáñanos a<br>celebrar la llegada de</p>
+      <div class="name" id="name" aria-label="Julian">JULIAN</div>
+      <p class="date rv" style="--t:2.1s">Domingo<b>8</b>Noviembre</p>
+    </div>
+    <div class="raton"><img src="img/raton.webp" alt=""></div>
+  </section>
+
+  <section class="duo sv">
+    <svg class="bunting" viewBox="0 0 480 80" aria-hidden="true"><path d="M-5 6Q240 74 485 6" stroke="#8ecfff" stroke-width="3" fill="none"/><polygon points="11,10 47,10 29,50" fill="#8ecfff" stroke="#cfe3fb" stroke-width="1.5" stroke-linejoin="round" style="animation-delay:-0.0s"/><polygon points="59,15 95,15 77,55" fill="#ffffff" stroke="#cfe3fb" stroke-width="1.5" stroke-linejoin="round" style="animation-delay:-0.5s"/><polygon points="112,19 148,19 130,59" fill="#4ea8ee" stroke="#cfe3fb" stroke-width="1.5" stroke-linejoin="round" style="animation-delay:-1.0s"/><polygon points="164,22 200,22 182,62" fill="#a8dcff" stroke="#cfe3fb" stroke-width="1.5" stroke-linejoin="round" style="animation-delay:-1.5s"/><polygon points="222,23 258,23 240,63" fill="#8ecfff" stroke="#cfe3fb" stroke-width="1.5" stroke-linejoin="round" style="animation-delay:-2.0s"/><polygon points="280,22 316,22 298,62" fill="#ffffff" stroke="#cfe3fb" stroke-width="1.5" stroke-linejoin="round" style="animation-delay:-2.5s"/><polygon points="332,19 368,19 350,59" fill="#4ea8ee" stroke="#cfe3fb" stroke-width="1.5" stroke-linejoin="round" style="animation-delay:-3.0s"/><polygon points="385,15 421,15 403,55" fill="#a8dcff" stroke="#cfe3fb" stroke-width="1.5" stroke-linejoin="round" style="animation-delay:-3.5s"/><polygon points="433,10 469,10 451,50" fill="#8ecfff" stroke="#cfe3fb" stroke-width="1.5" stroke-linejoin="round" style="animation-delay:-4.0s"/></svg>
+    <svg class="bl" style="left:2%;top:90px" viewBox="0 0 120 170" aria-hidden="true"><g stroke="#cfe3fb" stroke-width="2"><ellipse cx="34" cy="42" rx="24" ry="30" fill="#8ecfff"/><ellipse cx="82" cy="36" rx="24" ry="30" fill="#4ea8ee"/><ellipse cx="58" cy="66" rx="24" ry="30" fill="#fff"/></g><g fill="#fff" opacity=".6"><ellipse cx="26" cy="30" rx="5" ry="9"/><ellipse cx="74" cy="24" rx="5" ry="9"/></g><path d="M34 72Q48 120 60 165M82 66Q70 120 60 165M58 96Q60 130 60 165" stroke="#9fd6ff" stroke-width="1.5" fill="none"/></svg>
+  <svg class="bl b2" style="right:3%;top:330px" viewBox="0 0 120 170" aria-hidden="true"><g stroke="#cfe3fb" stroke-width="2"><ellipse cx="40" cy="38" rx="24" ry="30" fill="#fff"/><ellipse cx="84" cy="48" rx="24" ry="30" fill="#8ecfff"/></g><ellipse cx="32" cy="26" rx="5" ry="9" fill="#8ecfff" opacity=".45"/><path d="M40 68Q52 120 62 165M84 78Q72 120 62 165" stroke="#9fd6ff" stroke-width="1.5" fill="none"/></svg>
+    <svg class="cloud" style="top:60px;right:-50px;width:170px;--d:13s" viewBox="0 0 200 110"><use href="#cloud"/></svg>
+    <svg class="cloud" style="top:430px;left:-55px;width:180px;--d:17s" viewBox="0 0 200 110"><use href="#cloud"/></svg>
+    <svg class="cloud" style="top:250px;left:-20px;width:90px;--d:9s;opacity:.7" viewBox="0 0 200 110"><use href="#cloud"/></svg>
+    <svg class="cloud" style="top:560px;right:-30px;width:120px;--d:11s" viewBox="0 0 200 110"><use href="#cloud"/></svg>
+    <svg class="cloud under" viewBox="0 0 200 110"><use href="#cloud"/></svg>
+    <svg class="ht" style="left:22%;top:420px" viewBox="0 0 24 22"><use href="#heart"/></svg>
+    <svg class="ht" style="left:70%;top:500px;width:16px;animation-delay:2s" viewBox="0 0 24 22"><use href="#heart"/></svg>
+    <svg class="ht" style="left:48%;top:470px;width:14px;animation-delay:4s" viewBox="0 0 24 22"><use href="#heart"/></svg>
+    <i class="sp" style="top:120px;left:30%;animation-delay:.5s"></i><i class="sp" style="top:340px;right:12%;width:12px;height:12px;animation-delay:1.7s"></i><i class="sp" style="top:600px;left:14%;width:12px;height:12px;animation-delay:1s"></i>
+        <div class="fl"><img src="img/mama.webp" alt="Mamá elefante alcanzando a su bebé"></div>
+    <p>Julian ya viene en camino</p>
+    <a class="loc" href="https://maps.app.goo.gl/4iQAke5KP8Uobe7C8" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.500a2.500 2.500 0 0 1 0 5z"/></svg>
+      Ver ubicación
+    </a>
+  </section>
+
+  <div class="countwrap sv">
+    <p class="cd-t">Faltan para conocer a Julian</p>
+    <div class="count" id="count"></div>
+    <p class="cd-s">8 de noviembre</p>
+  </div>
+
+  <section class="rsvp sv" id="rsvp" aria-labelledby="rsvpT">
+    <h3 class="rsvp-t" id="rsvpT">Confirma tu asistencia</h3>
+    <p class="rsvp-s">Nos haría muy felices que nos acompañes</p>
+
+    <form id="rsvpForm" novalidate>
+      <label class="fl-l" for="rname">Tu nombre</label>
+      <input class="fl-i" id="rname" name="nombre" type="text" maxlength="60" autocomplete="name" placeholder="Nombre y apellido" required>
+
+      <fieldset class="fs">
+        <legend class="fl-l">¿Podrás asistir?</legend>
+        <div class="pills">
+          <input type="radio" name="asiste" id="yes" value="Sí"><label for="yes">¡Sí, ahí estaré!</label>
+          <input type="radio" name="asiste" id="no" value="No"><label for="no">No podré ir</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="fs people" id="peopleBox" hidden>
+        <legend class="fl-l">¿Cuántas personas asistirán? <small>(contándote a ti)</small></legend>
+        <div class="pills chips" id="chips"></div>
+      </fieldset>
+
+      <input class="hp" type="text" name="web" id="web" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="err" id="err" role="alert" aria-live="polite"></p>
+      <button class="send" id="send" type="submit"><span>Enviar confirmación</span></button>
+    </form>
+
+    <div class="thanks" id="thanks" hidden aria-live="polite">
+      <svg class="check" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="24"/><path d="M15 27l8 8 14-16"/></svg>
+      <h4 id="thanksT">¡Muchas gracias!</h4>
+      <p id="thanksP"></p>
+      <button class="again" id="again" type="button">Cambiar mi respuesta</button>
+    </div>
+  </section>
+</main>
+
+<audio id="bgm" src="audio/cancion.mp3" loop preload="auto"></audio>
+<script src="js/music.js"></script>
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
